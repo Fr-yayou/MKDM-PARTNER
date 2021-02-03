@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main>
+      <div class="container-mainView">
+        <SideBar class="sideBar"/>
+        <div class="dashboard-container">
+          <Dashboard/> 
+        </div>
+        <SideBarTwo/>
+      </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import SideBar from "./components/SideBar"
+import Dashboard from "./components/DashBoard"
+import SideBarTwo from "./components/SideBarTwo"
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+    SideBar,
+    Dashboard,
+    SideBarTwo
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+#app{
+  background-color: #E0E0E0;
+}
+.container-mainView{
+  display: flex;
+  background-color: white;
+}
+.sideBar{
+  width: 20%;
+}
+
+.dashboard-container{
+    width: 60%;
+    height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 </style>

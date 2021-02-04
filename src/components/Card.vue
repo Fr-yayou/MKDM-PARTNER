@@ -26,10 +26,14 @@
                       </div>
                   </div>
               </div>
-              <p>Hello</p>
-              <p>Hello</p>
-              <p>Hello</p>
-          </diV>
+              <div class="progressBar">
+                  <div class="progress"><span class="pointer">50%</span></div>
+              </div>
+              <div class="actions">
+                  <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
+                  <v-icon>{{icons.mdiTrashCanOutline}}</v-icon>
+              </div>
+          </div>
           <div id="elevate" class="table-body">
               <div class="profile-info">
                   <div>
@@ -41,9 +45,13 @@
                       </div>
                   </div>
               </div>
-              <p>Hello</p>
-              <p>Hello</p>
-              <p>Hello</p>
+              <div class="progressBar">
+                  <div class="progressTwo"><span class="pointer">63%</span></div>
+              </div>
+              <div class="actions">
+                  <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
+                  <v-icon>{{icons.mdiTrashCanOutline}}</v-icon>
+              </div>
           </diV>
           <div class="table-body">
               <div class="profile-info">
@@ -56,17 +64,33 @@
                       </div>
                   </div>
               </div>
-              <p>Hello</p>
-              <p>Hello</p>
-              <p>Hello</p>
+              <div class="progressBar">
+                  <div class="progressThree"><span id="none" class="pointer">100%</span></div>
+                  <div class="check">
+                      <v-btn color="#A5D6A7"   small elevation="2" class="white--text"><v-icon color="white">{{icons.mdiCheckBold}}</v-icon>Approve</v-btn>
+                      <span>Dispute</span>
+                  </div>
+              </div>
+              <div class="actions">
+                  <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
+                  <v-icon>{{icons.mdiTrashCanOutline}}</v-icon>
+              </div>
           </diV>
       </div>
   </div>
 </template>
 
 <script>
+import { mdiTrashCanOutline } from '@mdi/js';
+import { mdiClockTimeEightOutline } from '@mdi/js';
+import { mdiCheckBold } from '@mdi/js';
 export default {
     name:"Card",
+    data(){
+        return{
+            icons:{mdiTrashCanOutline, mdiClockTimeEightOutline,mdiCheckBold }
+        }
+    }
 
 
 }
@@ -107,6 +131,10 @@ export default {
     margin-right: 15px;
 }
 
+.profile-info{
+    width: 33%;
+}
+
 .profile-info div:first-child{
     display: flex;
 }
@@ -124,6 +152,86 @@ export default {
    box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
    border-radius: 20px;
 }
+
+.progressBar{
+    height: 20px;
+    width: 230px;
+    margin-right: 60px;
+    background-color:#eaf1f8;
+    align-self: center;
+    border-radius:20px
+}
+
+.progress{
+    height: 20px;
+    width: 120px;
+    background-color: #FFAB91;
+    border-radius:20px  
+}
+
+.progressTwo{
+    
+    height: 20px;
+    width: 120px;
+    background-color: #FFAB91;
+    border-radius:20px  
+
+}
+.progressThree{
+    height: 20px;
+    width: 100%;
+    background-color: #B39DDB;
+    border-radius:20px  
+}
+
+.pointer{
+    background-color: white;
+    position: absolute;
+    margin-left: 113px;
+    height: 20px;
+    font-size:15px;
+
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-around;
+}
+
+.actions span:first-child{
+    background-color:#CFD8DC;
+    padding:1px;
+    border-radius:5px
+}
+
+.actions span:last-child{
+    background-color:#FFCDD2;
+    color:#EF5350;
+    padding:1px;
+    border-radius:5px
+}
+
+.infos span{
+    font-size:12px
+}
+#none{
+    display: none;
+}
+
+.check{
+    margin-top: 5px;
+}
+.check button{
+    margin-right: 5px;
+}
+.check span{
+    font-size: 15px;
+}
+
+
+
 
 
 

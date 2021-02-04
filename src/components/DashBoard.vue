@@ -10,6 +10,7 @@
         </div>
         <div class="container-card">
             <Card/>
+            <SecondCard/>
         </div>
       </div>
   </div>
@@ -17,6 +18,7 @@
 
 <script>
 import Card from "../components/Card"
+import SecondCard from "../components/SecondCard"
 import {
     mdiAccountMultiplePlusOutline,mdiFormatListBulleted,
     mdiCreditCardOutline,mdiStickerPlusOutline   
@@ -25,7 +27,8 @@ export default {
     name:"Dashboard",
 
     components:{
-        Card
+        Card,
+        SecondCard
     },
 
     data(){

@@ -29,6 +29,15 @@
           </div>
       </div>
       <div class="line-breaker"></div>
+      <div class="task-container">
+          <h4>Your Tasks</h4>
+          <div class="name"><h5>Task Name</h5></div>
+          <div class="newTask">
+              <p>You have no tasks</p>
+              <v-btn elevation="2" color="#FFAB91" medium class="white--text" >Add new task</v-btn>
+          </div>
+
+      </div>
 
   </div>
 </template>
@@ -127,6 +136,40 @@ export default {
     margin-left: 35px;
     margin-right: 35px;
 }
+.newTask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newTask p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.task-container{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+}
+.task-container h4{
+    padding-bottom: 20px;
+}
+
+.name{
+    height: 40px;
+    background-color:#eaf1f8;
+    border-radius: 20px;
+}
+
+.name h5{
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+
+
 
 
 

@@ -10,15 +10,15 @@
         </div>
         <div class="container-card">
             <Card/>
-            <SecondCard/>
         </div>
+        <!-- <SecondCard/> -->
       </div>
   </div>
 </template>
 
 <script>
 import Card from "../components/Card"
-import SecondCard from "../components/SecondCard"
+// import SecondCard from "../components/SecondCard"
 import {
     mdiAccountMultiplePlusOutline,mdiFormatListBulleted,
     mdiCreditCardOutline,mdiStickerPlusOutline   
@@ -28,7 +28,7 @@ export default {
 
     components:{
         Card,
-        SecondCard
+        // SecondCard
     },
 
     data(){
@@ -57,7 +57,7 @@ export default {
 .container-btn{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 75%;
     padding-top: 35px;
 }
 

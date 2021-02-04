@@ -42,7 +42,7 @@ export default {
   background-color: white;
 }
 .sideBar{
-  width: 20%;
+  width: 15%;
 }
 
 .dashboard-container{

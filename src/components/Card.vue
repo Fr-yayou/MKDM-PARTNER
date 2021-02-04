@@ -26,8 +26,11 @@
                       </div>
                   </div>
               </div>
-              <div class="progressBar">
-                  <div class="progress"><span class="pointer">50%</span></div>
+              <div>
+                  <h5>Phase 1 of the CMS</h5>
+                  <div class="progressBar">
+                    <div class="progress"><span class="pointer">50%</span></div>
+                  </div>
               </div>
               <div class="actions">
                   <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
@@ -45,8 +48,11 @@
                       </div>
                   </div>
               </div>
-              <div class="progressBar">
-                  <div class="progressTwo"><span class="pointer">63%</span></div>
+              <div>
+                    <h5>Setting up Dev/Prod/Test Environements</h5>
+                    <div class="progressBar">
+                        <div class="progressTwo"><span class="pointer">63%</span></div>
+              </div>
               </div>
               <div class="actions">
                   <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
@@ -64,12 +70,15 @@
                       </div>
                   </div>
               </div>
-              <div class="progressBar">
+              <div>
+                  <h5>Logo Design</h5>
+                  <div class="progressBar">
                   <div class="progressThree"><span id="none" class="pointer">100%</span></div>
                   <div class="check">
                       <v-btn color="#A5D6A7"   small elevation="2" class="white--text"><v-icon color="white">{{icons.mdiCheckBold}}</v-icon>Approve</v-btn>
                       <span>Dispute</span>
                   </div>
+              </div>
               </div>
               <div class="actions">
                   <v-icon>{{icons.mdiClockTimeEightOutline }}</v-icon>
@@ -105,6 +114,7 @@ export default {
 .card{
     margin-left: 30px;
     margin-right: 30px;
+    height:350px
 }
 .table-head {
     display: flex;

@@ -85,15 +85,15 @@ export default {
 
 }
 .link-dashboard div:first-child{
-    border-right: 3px solid #FFB74D;
+    border-right: 3px solid #FFAB91;
     height: 35px;
     align-items: flex-end;
 }
 
 .link-dashboard div:first-child span{
-    background-color: #FFE0B2;
+    background-color:#FFAB91;
     border-radius:5px;
-    color:#FFB74D;
+    color:#FFCCBC;
     opacity: 0.8 ;
 }
 .link-profile{

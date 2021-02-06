@@ -11,14 +11,14 @@
         <div class="container-card">
             <Card/>
         </div>
-        <!-- <SecondCard/> -->
+        <SecondCard/>
       </div>
   </div>
 </template>
 
 <script>
 import Card from "../components/Card"
-// import SecondCard from "../components/SecondCard"
+import SecondCard from "../components/SecondCard"
 import {
     mdiAccountMultiplePlusOutline,mdiFormatListBulleted,
     mdiCreditCardOutline,mdiStickerPlusOutline   
@@ -28,7 +28,7 @@ export default {
 
     components:{
         Card,
-        // SecondCard
+        SecondCard
     },
 
     data(){
